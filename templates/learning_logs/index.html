@@ -1,7 +1,17 @@
 {% extends "learning_logs/base.html" %}
 
-{% block content %}
-    <font color="black"><header>Learning Log</header>
-    <font color="black"><main><p>Learninn Log позволяет вам отслеживать свое 
-      обучение по любой теме, которую вы изучаете.</p>
-{% endblock content %}
+{% block page_header %}
+  <div class='jumbotron'>
+    <h1 class="display-4">Приступите к своему обучению.</h1>
+
+    <p class="lead">Learninn Log позволяет вам отслеживать свое 
+      обучение по любой теме, которую вы изучаете.
+      Сделайте свой собственный журнал обучения и ведите темы,
+      которые вы изучаете. Когда вы узнаете что-то новое
+      по теме, сделайте запись, обобщающую то, что вы узнали.</p>
+
+    <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+        role="button">Register &raquo;</a>
+  </div>
+
+{% endblock page_header %}
