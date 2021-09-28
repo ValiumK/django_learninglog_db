@@ -1,0 +1,5 @@
+branch-defaults:
+  master:
+    environment: Jenkinslearninglog-env
+global:
+  profile: eb-cli
